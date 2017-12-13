@@ -1,0 +1,442 @@
+@font-face {
+  font-family: "Arial-user";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/arial.eot");
+  src: url("../../fonts/arial.eot?#iefix") format("embedded-opentype"), url("../../fonts/arial.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Arial-bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/arialbd.eot");
+  src: url("../../fonts/arialbd.eot?#iefix") format("embedded-opentype"), url("../../fonts/arialbd.ttf") format("truetype"); }
+
+/* line 5, C:/projects/test_it_territory/app/styles/main.sass */
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+/* line 9, C:/projects/test_it_territory/app/styles/main.sass */
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+/* line 13, C:/projects/test_it_territory/app/styles/main.sass */
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+/* line 17, C:/projects/test_it_territory/app/styles/main.sass */
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+/* line 21, C:/projects/test_it_territory/app/styles/main.sass */
+* {
+  outline: 0px solid red; }
+
+/* line 24, C:/projects/test_it_territory/app/styles/main.sass */
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+/* line 27, C:/projects/test_it_territory/app/styles/main.sass */
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+/* line 31, C:/projects/test_it_territory/app/styles/main.sass */
+html, body {
+  height: 100%; }
+
+/* line 34, C:/projects/test_it_territory/app/styles/main.sass */
+h1 {
+  font-size: 24px; }
+
+/* line 37, C:/projects/test_it_territory/app/styles/main.sass */
+h2 {
+  font-size: 18px; }
+
+/* line 40, C:/projects/test_it_territory/app/styles/main.sass */
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.75;
+  font-family: "Arial-user", sans-serif, Arial, Geneva, Helvetica, sans-serif;
+  opacity: 1;
+  margin: 0;
+  padding: 0; }
+
+/* line 50, C:/projects/test_it_territory/app/styles/main.sass */
+.button {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  padding: 5px 14px;
+  background: linear-gradient(0deg, #b30800, #ff0e00); }
+  /* line 57, C:/projects/test_it_territory/app/styles/main.sass */
+  .button:hover {
+    background: linear-gradient(180deg, #b30800, #ff0e00); }
+
+/* line 60, C:/projects/test_it_territory/app/styles/main.sass */
+a {
+  text-decoration: none; }
+  /* line 62, C:/projects/test_it_territory/app/styles/main.sass */
+  a:hover {
+    text-decoration: none; }
+
+/* line 65, C:/projects/test_it_territory/app/styles/main.sass */
+.container {
+  min-width: 600px;
+  max-width: 1200px;
+  outline: 0px solid red;
+  margin: 0px auto;
+  background-color: inherit;
+  height: 100%;
+  padding: 0px 40px; }
+
+/* line 75, C:/projects/test_it_territory/app/styles/main.sass */
+.wrapper .header {
+  width: 100%;
+  background-color: #1e2733;
+  height: 190px; }
+  /* line 79, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .header .logo {
+    height: 78px;
+    width: 210px; }
+  /* line 82, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .header .tagline {
+    font-size: 25px;
+    color: white;
+    margin-left: 75px; }
+  /* line 86, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .header .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+
+/* line 91, C:/projects/test_it_territory/app/styles/main.sass */
+.wrapper .news {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 18px; }
+  /* line 95, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .news .news-name {
+    color: #ff0e00;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    margin-top: 45px;
+    text-transform: uppercase;
+    font-family: Arial-bold, Arial, Geneva, Helvetica, sans-serif; }
+  /* line 102, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .news .news-section {
+    width: 100%;
+    position: relative; }
+    /* line 105, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .news .news-section .news-box {
+      width: 365px;
+      display: inline-block;
+      margin-left: 41px;
+      margin-top: 30px; }
+      /* line 110, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box:first-child {
+        margin-left: 0px; }
+        /* line 112, C:/projects/test_it_territory/app/styles/main.sass */
+        .wrapper .news .news-section .news-box:first-child::before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          border-top: 1px solid black;
+          position: absolute;
+          top: 10px; }
+      /* line 120, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box:nth-child(3n-2) {
+        margin-left: 0px; }
+      /* line 122, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        border-top: 1px solid black;
+        margin-top: 15px;
+        position: absolute;
+        left: 0; }
+        /* line 131, C:/projects/test_it_territory/app/styles/main.sass */
+        .wrapper .news .news-section .news-box::after:last-child {
+          border: none; }
+          /* line 133, C:/projects/test_it_territory/app/styles/main.sass */
+          .wrapper .news .news-section .news-box::after:last-child::after {
+            border: none; }
+      /* line 135, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box .news-image {
+        width: 120px;
+        overflow: hidden;
+        float: left; }
+      /* line 139, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box .news-text, .wrapper .news .news-section .news-box .news-title {
+        margin-left: 140px; }
+      /* line 141, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box .news-title {
+        margin-top: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 210px;
+        white-space: nowrap; }
+        /* line 147, C:/projects/test_it_territory/app/styles/main.sass */
+        .wrapper .news .news-section .news-box .news-title a {
+          color: black; }
+          /* line 149, C:/projects/test_it_territory/app/styles/main.sass */
+          .wrapper .news .news-section .news-box .news-title a:hover {
+            color: #003162; }
+      /* line 151, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .news .news-section .news-box .news-text {
+        padding-bottom: 5px;
+        height: 143px;
+        line-height: 1.3;
+        overflow: hidden; }
+  /* line 156, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .news .container {
+    overflow: hidden; }
+
+/* line 159, C:/projects/test_it_territory/app/styles/main.sass */
+.wrapper .offers {
+  width: 100%;
+  background-color: #363e48; }
+  /* line 162, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .offers .offers-name {
+    color: #ff0e00;
+    font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding-top: 45px; }
+  /* line 170, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .offers .flex-wrapp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 35px; }
+    /* line 175, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .offers .flex-wrapp .item {
+      overflow: hidden;
+      flex-basis: 250px;
+      margin-top: 35px;
+      position: relative;
+      cursor: pointer; }
+
+/* line 182, C:/projects/test_it_territory/app/styles/main.sass */
+.wrapper .footer {
+  width: 100%;
+  background-color: #1e2733;
+  position: relative; }
+  /* line 186, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .footer .table-wrapper {
+    display: table;
+    width: 100%; }
+  /* line 189, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .footer .contacts {
+    color: white;
+    width: 200px;
+    display: table-cell; }
+    /* line 193, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .contacts p {
+      font-weight: bold; }
+      /* line 195, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .footer .contacts p span {
+        font-weight: normal; }
+    /* line 197, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .contacts .contacts-title {
+      padding-top: 25px;
+      color: #ffb400;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+      font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif;
+      font-weight: bold;
+      margin: 0; }
+    /* line 206, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .contacts .skype span a, .wrapper .footer .contacts .email span a {
+      color: #ff0e00;
+      text-decoration: underline; }
+  /* line 209, C:/projects/test_it_territory/app/styles/main.sass */
+  .wrapper .footer .feedback {
+    display: table-cell;
+    padding-left: 150px;
+    padding-right: 55px;
+    padding-bottom: 35px; }
+    /* line 214, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .feedback form {
+      background-color: #363d48;
+      margin: 0;
+      padding: 3px 35px 10px 15px;
+      width: 100%;
+      height: 100%;
+      float: left; }
+    /* line 221, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .feedback .feedback-title {
+      color: #ffb400;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+      font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif;
+      font-weight: bold;
+      margin: 0;
+      padding-bottom: 15px; }
+    /* line 228, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .feedback .email, .wrapper .footer .feedback .area {
+      width: 100%;
+      border: none;
+      padding: 15px 10px;
+      margin-top: 10px;
+      padding: 10px; }
+      /* line 234, C:/projects/test_it_territory/app/styles/main.sass */
+      .wrapper .footer .feedback .email::placeholder, .wrapper .footer .feedback .area::placeholder {
+        color: black; }
+    /* line 236, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .feedback .area {
+      resize: none; }
+    /* line 238, C:/projects/test_it_territory/app/styles/main.sass */
+    .wrapper .footer .feedback .button {
+      border: none;
+      cursor: pointer;
+      float: right;
+      margin: 0;
+      padding: 14px 55px;
+      font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      margin-right: -20px;
+      margin-top: 5px; }
+
+/* line 250, C:/projects/test_it_territory/app/styles/main.sass */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1285px) {
+  /**/
+  /* line 7, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box {
+    width: 340px; }
+  /* line 9, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box .news-title, .wrapper .news .news-section .news-box .news-text {
+    margin-left: 128px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  /**/
+  /* line 16, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box {
+    width: 45%; }
+    /* line 18, C:/projects/test_it_territory/app/styles/_media.sass */
+    .wrapper .news .news-section .news-box:nth-child(3n-2) {
+      margin-left: 41px; }
+      /* line 20, C:/projects/test_it_territory/app/styles/_media.sass */
+      .wrapper .news .news-section .news-box:nth-child(3n-2)::after {
+        border-top: 1px solid black; }
+    /* line 22, C:/projects/test_it_territory/app/styles/_media.sass */
+    .wrapper .news .news-section .news-box:nth-child(odd) {
+      margin-left: 0px; }
+  /* line 25, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .offers .flex-wrapp .item {
+    flex-basis: 300px;
+    margin-left: 35px; }
+  /* line 28, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .offers .flex-wrapp {
+    justify-content: flex-start;
+    padding-bottom: 40px;
+    margin-left: -35px; }
+  /* line 32, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box .news-title, .wrapper .news .news-section .news-box .news-text {
+    margin-left: 140px; } }
+
+@media only screen and (max-width: 1090px) {
+  /**/
+  /* line 37, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .offers .flex-wrapp {
+    justify-content: space-between; }
+  /* line 39, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .offers .flex-wrapp .item {
+    flex-grow: 1;
+    flex-basis: 250px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 899px) {
+  /**/
+  /* line 50, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box {
+    width: 100%;
+    margin-left: 0px; }
+    /* line 53, C:/projects/test_it_territory/app/styles/_media.sass */
+    .wrapper .news .news-section .news-box:nth-child(3n-2) {
+      margin-left: 0px; }
+      /* line 55, C:/projects/test_it_territory/app/styles/_media.sass */
+      .wrapper .news .news-section .news-box:nth-child(3n-2)::after {
+        border-top: 1px solid black; }
+  /* line 57, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box .news-text {
+    height: auto;
+    min-height: 78px;
+    overflow: none; }
+  /* line 61, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .offers .flex-wrapp .item {
+    margin-left: 35px; }
+  /* line 63, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .footer .feedback {
+    padding-left: 100px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 600px) {
+  /**/
+  /* line 71, C:/projects/test_it_territory/app/styles/_media.sass */
+  .header .tagline {
+    font-size: 25px;
+    color: white;
+    margin-left: 75px;
+    width: 230px; }
+  /* line 76, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box {
+    width: 100%;
+    margin-left: 0px; }
+  /* line 79, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .news .news-section .news-box .news-text {
+    height: auto;
+    overflow: none; }
+  /* line 82, C:/projects/test_it_territory/app/styles/_media.sass */
+  .wrapper .footer .feedback {
+    padding-left: 85px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 600px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 900px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
+
+/*# sourceMappingURL=main.css.map */

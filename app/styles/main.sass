@@ -1,0 +1,256 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+*
+  outline: 0px solid red
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body
+  height: 100%
+
+h1
+  font-size: $h1sz
+
+h2
+  font-size: $h2sz
+  
+body
+  font-size: 14px
+  min-width: 320px
+  position: relative
+  line-height: 1.75
+  font-family: $default-font ,Arial,Geneva, Helvetica, sans-serif
+  opacity: 1
+  margin: 0
+  padding: 0
+  
+.button
+  text-transform: uppercase
+  color: white
+  font-weight: bold
+  text-shadow: 0px 1px 0px rgba(black,.3)
+  padding: 5px 14px
+  background: $buttons
+  &:hover
+    background: $buttonsHover
+  
+a
+  text-decoration: none
+  &:hover
+    text-decoration: none
+  
+.container
+  min-width: 600px
+  max-width: 1200px
+  outline: 0px solid red
+  margin: 0px auto
+  background-color: inherit
+  height: 100%
+  padding: 0px 40px
+  
+.wrapper
+  .header
+    width: 100%
+    background-color: $header
+    height: 190px
+    .logo
+      height: 78px
+      width: 210px
+    .tagline
+      font-size: 25px
+      color: white
+      margin-left: 75px
+    .container
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      
+  .news
+    width: 100%
+    background-color: $news
+    margin-bottom: 18px
+    .news-name
+      color: #ff0e00
+      text-shadow: 0px 1px 0px rgba(black,.3)
+      margin: 0
+      margin-top: 45px
+      text-transform: uppercase
+      font-family: Arial-bold, Arial, Geneva, Helvetica, sans-serif
+    .news-section
+      width: 100%
+      position: relative
+      .news-box
+        width: 365px
+        display: inline-block
+        margin-left: 41px
+        margin-top: 30px
+        &:first-child
+          margin-left: 0px
+          &::before
+            content: ""
+            display: block
+            width: 100%
+            height: 1px
+            border-top: 1px solid black
+            position: absolute
+            top: 10px
+        &:nth-child(3n-2)
+          margin-left: 0px
+        &::after
+          content: ""
+          display: block
+          width: 100%
+          height: 1px
+          border-top: 1px solid black
+          margin-top: 15px
+          position: absolute
+          left: 0
+          &:last-child
+            border: none
+            &::after
+              border: none
+        .news-image
+          width: 120px
+          overflow: hidden
+          float: left
+        .news-text,.news-title
+          margin-left: 140px
+        .news-title
+          margin-top: 0px
+          overflow: hidden
+          text-overflow: ellipsis
+          width: 210px
+          white-space: nowrap
+          a
+            color: black
+            &:hover
+              color: #003162
+        .news-text
+          padding-bottom: 5px
+          height: 143px
+          line-height: 1.3
+          overflow: hidden
+    .container
+      overflow: hidden
+      
+  .offers
+    width: 100%
+    background-color: $shares
+    .offers-name
+      color: $accent
+      font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif
+      font-weight: bold
+      text-transform: uppercase
+      text-shadow: 0px 1px 0px rgba(black,.3)
+      margin: 0
+      padding-top: 45px
+    .flex-wrapp
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      padding-bottom: 35px
+      .item
+        overflow: hidden
+        flex-basis: 250px
+        margin-top: 35px
+        position: relative
+        cursor: pointer
+        
+  .footer
+    width: 100%
+    background-color: $footer
+    position: relative
+    .table-wrapper
+      display: table
+      width: 100%
+    .contacts
+      color: white
+      width: 200px
+      display: table-cell
+      p
+        font-weight: bold
+        span
+          font-weight: normal
+      .contacts-title
+        padding-top: 25px
+        color: #ffb400
+        text-shadow: 0px 1px 0px rgba(black,.3)
+        font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif
+        font-weight: bold
+        margin: 0
+      .skype,.email
+        span
+          a
+            color: #ff0e00
+            text-decoration: underline
+    .feedback
+      display: table-cell
+      padding-left: 150px
+      padding-right: 55px
+      padding-bottom: 35px
+      form
+        background-color: #363d48
+        margin: 0
+        padding: 3px 35px 10px 15px
+        width: 100%
+        height: 100%
+        float: left
+      .feedback-title
+        color: #ffb400
+        text-shadow: 0px 1px 0px rgba(black,.3)
+        font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif
+        font-weight: bold
+        margin: 0
+        padding-bottom: 15px
+      .email,.area
+        width: 100%
+        border: none
+        padding: 15px 10px
+        margin-top: 10px
+        padding: 10px
+        &::placeholder
+          color: black
+      .area
+        resize: none
+      .button
+        border: none
+        cursor: pointer
+        float: right
+        margin: 0
+        padding: 14px 55px
+        font-family: Arial-bold,Arial,Geneva, Helvetica, sans-serif
+        font-weight: bold
+        font-size: 18px
+        margin-right: -20px
+        margin-top: 5px
+
+.img-responsive
+  display: block
+  max-width: 100%
+  height: auto
+  
+
+@import "media" // Всегда в конце

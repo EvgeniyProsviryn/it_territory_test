@@ -1,0 +1,121 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1285px)
+  /**/
+  .wrapper .news .news-section .news-box
+    width: 340px
+  .wrapper .news .news-section .news-box .news-title,.wrapper .news .news-section .news-box .news-text
+    margin-left: 128px
+    
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  /**/
+  .wrapper .news .news-section .news-box
+    width: 45%
+    &:nth-child(3n-2)
+      margin-left: 41px
+      &::after
+        border-top: 1px solid black
+    &:nth-child(odd)
+      margin-left: 0px
+    
+  .wrapper .offers .flex-wrapp .item
+    flex-basis: 300px
+    margin-left: 35px
+  .wrapper .offers .flex-wrapp
+    justify-content: flex-start
+    padding-bottom: 40px
+    margin-left: -35px
+  .wrapper .news .news-section .news-box .news-title,.wrapper .news .news-section .news-box .news-text
+    margin-left: 140px
+    
+@media only screen and (max-width : 1090px)
+  /**/
+  .wrapper .offers .flex-wrapp
+    justify-content: space-between
+  .wrapper .offers .flex-wrapp .item
+    flex-grow: 1
+    flex-basis: 250px
+
+
+  
+        
+      
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 899px)
+  /**/
+  .wrapper .news .news-section .news-box
+    width: 100%
+    margin-left: 0px
+    &:nth-child(3n-2)
+      margin-left: 0px
+      &::after
+        border-top: 1px solid black
+  .wrapper .news .news-section .news-box .news-text
+    height: auto
+    min-height: 78px
+    overflow: none
+  .wrapper .offers .flex-wrapp .item
+    margin-left: 35px
+  .wrapper .footer .feedback
+    padding-left: 100px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px)
+  /**/
+  .wrapper
+  .header
+    .tagline
+      font-size: 25px
+      color: white
+      margin-left: 75px
+      width: 230px
+  .wrapper .news .news-section .news-box
+    width: 100%
+    margin-left: 0px
+  .wrapper .news .news-section .news-box .news-text
+    height: auto
+    overflow: none
+  .wrapper .footer .feedback
+    padding-left: 85px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+  /**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  /**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 600px)
+  /**/
+  
+  
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 900px)
+  /**/
+  
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  /**/
